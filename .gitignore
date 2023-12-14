@@ -171,4 +171,6 @@ dataset_art_test
 config.py
 __pycache__/*
 /podcast_module/__pycache__/*
+/podcast_module/audio_beautification/__pycache__/*
 /images_generation_module/__pycache__/*
+
