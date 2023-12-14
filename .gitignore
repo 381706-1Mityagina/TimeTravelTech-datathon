@@ -167,3 +167,8 @@ inception_v3
 archive
 dataset_art_train
 dataset_art_test
+
+config.py
+__pycache__/*
+/podcast_module/__pycache__/*
+/images_generation_module/__pycache__/*
