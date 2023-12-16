@@ -1,15 +1,14 @@
-### Модули
-**cv_api.py** - локальный веб-сервер на Flask для инференса модели по класификации картин (поиск художника)
+### Modules
+**cv_api.py** - local web server on Flask for model inference for painting classification (artist search)
 
-**streamlit_app.py** - локальный веб-приложение на основе streamlit для визуализации модулей 
+**streamlit_app.py** - local web application based on streamlit for visualization of modules
 
-### Запуск модулей
-1. Сначала в командной строке из этой директории:
+### Launching modules
+1. First, on the command line from this directory:
     
-        python cv_api.py
+         python cv_api.py
 
 
-2. После в командной строке из этой директории:
+2. After on the command line from this directory:
 
-        streamlit run streamlit_app.py
-
+         streamlit run streamlit_app.py
