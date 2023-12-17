@@ -40,10 +40,11 @@ TBD
 
 ## 💫 Usage/demonstartion:
 There are a few ways to see the TimeTravelTech Podcast creator in use:
-(but you will need to know OPENAI_API_KEY and TELEGRAM_HTTP_API).
+(but you will need to know `OPENAI_API_KEY` and `TELEGRAM_HTTP_API`).
 - Go to `visualization_module/Streamlit` and follow the instructions there.
 - There is a Telegram chat bot called TimeTravelTech. *TBD* ???
 - Or you can go to the separate modules and test them OR you can run `main_module.py` (uncomment main()) to see pars of the project in use.
 
 To view the demo video, please follow the link `visualization_module/Streamlit/demo/demo_streamlit.mp4`.
-TODO: add a `demo.gif`
+
+![](https://github.com/381706-1Mityagina/TimeTravelTech-datathon/blob/streamlit/Visualization_module/Streamlit/demo/demo_streamlit.gif)
