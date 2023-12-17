@@ -174,3 +174,5 @@ __pycache__/*
 /podcast_module/audio_beautification/__pycache__/*
 /images_generation_module/__pycache__/*
 
+Visualization_module/Streamlit/*.png
+
