@@ -3,6 +3,9 @@
 
 **streamlit_app.py** - local web application based on streamlit for visualization of modules
 
+### Usage tips:
+Put [inceptionV3](https://drive.google.com/file/d/1PX24dwQyEKfwcCWMAT5EFV_a3gRYgAMC/view?usp=sharing) in `cv_module/models` directory.
+
 ### Launching modules
 1. First, on the command line from this directory:
     

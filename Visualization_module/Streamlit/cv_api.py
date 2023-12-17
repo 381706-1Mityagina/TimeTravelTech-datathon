@@ -5,7 +5,7 @@ import tensorflow as tf
 
 flask_app = Flask(__name__)
 
-saved_model_path = "../../CV_preparation/models/inception_v3"
+saved_model_path = "../../cv_module/models/inception_v3"
 LOADED = tf.saved_model.load(saved_model_path)
 IMAGE_SIZE = (299, 299)
 normalization_layer = tf.keras.layers.Rescaling(1. / 255)
