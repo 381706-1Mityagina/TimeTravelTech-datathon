@@ -148,7 +148,7 @@ if history:
         response_image = requests.get(image_url)
         img = Image.open(BytesIO(response_image.content))
         
-        image_path = full_path + '/images_generation_module/images/' + artist + '.png'
+        image_path = '../../images_generation_module/images/' + artist + '.png'
         img.save(image_path)
         st.image(image_path, caption='Generated Image', use_column_width=True)
     # image creation
