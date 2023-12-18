@@ -47,4 +47,4 @@ There are a few ways to see the TimeTravelTech Podcast creator in use:
 
 To view the demo video, please follow the link `visualization_module/Streamlit/demo/demo_streamlit.mp4`.
 
-![](https://github.com/381706-1Mityagina/TimeTravelTech-datathon/blob/streamlit/Visualization_module/Streamlit/demo/demo_streamlit.gif)
+![](https://github.com/381706-1Mityagina/TimeTravelTech-datathon/blob/main/Visualization_module/Streamlit/demo/demo_streamlit.gif)
