@@ -16,17 +16,35 @@ That is, there will be Image recognition and Speech Synthesis.
 
 We can train the network or take a pre-trained one that will return the title and/or author from the photo, and then we’ll feed this result into gpt and get a small text and convert it to audio.
 
+![](https://github.com/381706-1Mityagina/TimeTravelTech-datathon/blob/main/posters/poster-0.png)
+
 ## 🎧 Flow:
-`Photo` -> `CV model` -> `Title of the work/Author` -> `gpt (with a specific request, they say, write a story in this style in so many words)` -> `text` -> `audio podcast`.
+`Photo` -> `CV model` -> `Title of the work/Author` -> `gpt (with a specific request, they say, write a story in this style in so many words)` -> `text` -> `audio podcast` -> `Audio beautification`.
 
 ## 🎧 Datasets:
-TBD
+The original `Wikiart` dataset is a collection of art images obtained from the website www.wikiart.org with information about works of art. It contains 80,020 unique images from 1,119 artists in 27 styles. The dataset was found on Kaggle.
+
+For this work, the original data set was reduced.
+Data preprocessing:
+5 artists were selected - camille pissarro, claude monet, edgar degas, ivan aivazovsky, vincent van gogh
+For each artist, only one main style in his work is left - Impressionism, Romanticism, Realism. Within the framework of this work, these 3 styles are recorded in the artist-style connection; in the future, we need to move away from this approach (see further steps).
+
+For the final dataset, 4168 images with 5 classes were prepared:
+- claude coin 1320
+- vincent van gogh 884
+- camille pissarro 787
+- edgar degas 600
+- ivan aivazovsky 577
+The final dataset was divided into a training and test set in a `70/30` ratio.
+
 
 ## 🎧 Models:
-TBD
+- `inception_v3` is the model that was chosen for this work. Initially, more complex models from the `EfficientNet` family were considered, but the training took place on a laptop, so the level of complexity of the architecture had to be reduced.
+- `text-davinci-003` can do language tasks with better quality and consistency than the curie, babbage, or ada models. Will be deprecated on Jan 4th 2024.	4,096 tokens. The model was found in OpenAI API.
+- `tts-1` TTS is an AI model that converts text to natural sounding spoken text. The model was found in OpenAI API.
+- `dall-e-3` DALL-E is a AI system that can create realistic images and art from a description in natural language. DALL·E 3 currently supports the ability, given a prompt, to create a new image with a specific size. The model was found in OpenAI API.
 
 ## 📂 Project structure:
-
 - `cv_module` - contains the source files needed for CV processing
 - `images_generation_module` - contains the source files needed for images generation
     - `images` - generated images (a few examples)
