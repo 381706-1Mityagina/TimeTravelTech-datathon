@@ -14,12 +14,17 @@ The user takes a photograph of a work of art (be it a painting, sculpture, build
 
 That is, there will be Image recognition and Speech Synthesis.
 
-We can train the network or take a pre-trained one that will return the title and/or author from the photo, and then we’ll feed this result into gpt and get a small text and convert it to audio.
-
 ![](https://github.com/381706-1Mityagina/TimeTravelTech-datathon/blob/main/posters/poster-0.png)
 
 ## 🎧 Flow:
-`Photo` -> `CV model` -> `Title of the work/Author` -> `gpt (with a specific request, they say, write a story in this style in so many words)` -> `text` -> `audio podcast` -> `Audio beautification`.
+`Photo of the painting` ->
+`CV module` ->
+`Recognized author name` ->
+`Text generation` ->
+`Text to Speech` ->
+`Audio effects` ->
+`Podcast` ->
+`Image generation`
 
 ## 🎧 Datasets:
 The original `Wikiart` dataset is a collection of art images obtained from the website www.wikiart.org with information about works of art. It contains 80,020 unique images from 1,119 artists in 27 styles. The dataset was found on Kaggle.
